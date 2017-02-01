@@ -5,4 +5,5 @@ RUN apk update && \
   update-ca-certificates && \
   apk add bash
 
-ENTRYPOINT ["/usr/bin/pgweb", "--bind=0.0.0.0", "--listen=8081"]
+ENTRYPOINT ["/usr/bin/pgweb"]
+CMD ["--bind=0.0.0.0", "--listen=8081"]
